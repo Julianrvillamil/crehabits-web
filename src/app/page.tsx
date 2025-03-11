@@ -1,10 +1,14 @@
 'use client';
 
-import { Registrarse } from '@/components/Registrarse';
-
+import { RegisterForm } from "@/components/RegisterForm";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
-  return (
-      <Registrarse />
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push("/registrarse");
+  }, []);
+  return null;
 }

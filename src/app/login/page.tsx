@@ -1,7 +1,7 @@
 import { Box, Container } from "@mui/material";
-import { RegisterForm } from "@/components/RegisterForm";
+import LoginForm from "@/components/LoginForm";
 
-export default function RegisterPage() {
+export default function LoginPage() {
   return (
     <Container>
       <Box
@@ -12,7 +12,7 @@ export default function RegisterPage() {
           height: "100vh",
         }}
       >
-        <RegisterForm />
+        <LoginForm />
       </Box>
     </Container>
   );
