@@ -1,12 +1,27 @@
-import { Container } from "@mui/material";
+"use client";
+
+import { Box, Typography, Divider, Container } from "@mui/material";
 
 export default function AlarmasPage() {
   return (
-    <Container>
-      <div>
-        <h1>Alarmas</h1>
-        <p>Esta es la página de alarmas.</p>
-      </div>
+    <Container maxWidth="lg">
+      {/* Contenedor Principal */}
+      <Box sx={{ mt: 4, textAlign: "left" }}>
+        {/* Título */}
+        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
+          Mis Alarmas
+        </Typography>
+
+        {/* Divider */}
+        <Divider sx={{ borderColor: "#000", mb: 3 }} />
+      </Box>
+
+      {/* Aquí irán las alarmas más adelante */}
+      <Box>
+        <Typography variant="body1" color="textSecondary">
+          Aquí aparecerán tus alarmas configuradas.
+        </Typography>
+      </Box>
     </Container>
   );
 }

@@ -1,12 +1,23 @@
-import { Container } from "@mui/material";
+"use client";
 
-export default function EstatisticsPage() {
+import { Box, Typography, Divider, Container } from "@mui/material";
+
+export default function AlarmasPage() {
   return (
-    <Container>
-      <div>
-        <h1>ESTADISTICAS</h1>
-        <p>Esta es la página de Estadisticas.</p>
-      </div>
+    <Container maxWidth="lg">
+      <Box sx={{ mt: 4, textAlign: "left" }}>
+        <Typography variant="h4" sx={{ fontWeight: "bold", mb: 1 }}>
+          Mis Reportes de Alarma
+        </Typography>
+
+        <Divider sx={{ borderColor: "#000", mb: 3 }} />
+      </Box>
+
+      <Box>
+        <Typography variant="body1" color="textSecondary">
+          Aquí aparecerán tus estadisticas de acuerdo a como utilizas tus alarmas.
+        </Typography>
+      </Box>
     </Container>
   );
 }
