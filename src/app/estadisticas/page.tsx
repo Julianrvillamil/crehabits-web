@@ -1,5 +1,6 @@
 "use client";
 
+import StatsDashboard from "@/components/charts/StatsDashboard";
 import { Box, Typography, Divider, Container } from "@mui/material";
 
 export default function AlarmasPage() {
@@ -15,9 +16,12 @@ export default function AlarmasPage() {
 
       <Box>
         <Typography variant="body1" color="textSecondary">
-          Aquí aparecerán tus estadisticas de acuerdo a como utilizas tus alarmas.
+          Aquí aparecerán tus estadisticas de acuerdo a como utilizas tus
+          alarmas.
         </Typography>
       </Box>
+
+        <StatsDashboard />
     </Container>
   );
 }
