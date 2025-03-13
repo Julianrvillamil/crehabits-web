@@ -1,38 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CreHabits
 
-## Getting Started
+🔗 **Deploy en Vercel:**
 
-First, run the development server:
+👉 [Ver CreHabits en línea](https://crehabits-foth7ysrq-julianrvillamils-projects.vercel.app/login)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📌 Descripción
+
+CreHabits es una aplicación desarrollada con **Next.js**, diseñada para ayudar a los usuarios a gestionar hábitos y alarmas personalizadas.
+
+## 🚀 Cómo ejecutar el proyecto en local
+
+Para ejecutar el proyecto en tu entorno local, sigue estos pasos:
+
+### 1️⃣ Clonar el repositorio
+
+Si aún no tienes el repositorio en tu máquina, clónalo usando:
+
 ```
+git clone https://github.com/Julianrvillamil/crehabits-web.git
+cd crehabits-web
+```
+2️⃣ Obtener los últimos cambios
+Si ya tienes el repositorio, asegúrate de actualizarlo con:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+```
+git pull origin main
+```
+3️⃣ Instalar dependencias
+Ejecuta el siguiente comando para instalar todas las dependencias del proyecto:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+npm install
+```
+4️⃣ Iniciar el servidor de desarrollo
+Para correr la aplicación en modo local, usa:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+npm run dev
+```
+Esto iniciará un servidor en <http://localhost:3000/> donde podrás ver la aplicación funcionando.
 
-## Learn More
+📚 Tecnologías utilizadas
+Next.js - Framework para React.
+Material-UI - Biblioteca de componentes UI.
+Tailwind CSS - Estilización flexible y rápida.
+Vercel - Hosting y despliegue continuo.
+📖 Documentación útil
+Si necesitas aprender más sobre Next.js o las tecnologías utilizadas, revisa los siguientes enlaces:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
-
+Documentación de Next.js
+Documentación de Material-UI
+Documentación de Tailwind CSS
+👨‍💻 ¡Gracias por evaluar nuestra aplicación! Si tienes alguna duda, no dudes en contactarnos.
