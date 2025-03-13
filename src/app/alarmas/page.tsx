@@ -1,5 +1,6 @@
 "use client";
 
+import AlarmCard from "@/components/alarma-card/Alarma-card";
 import { Box, Typography, Divider, Container } from "@mui/material";
 
 export default function AlarmasPage() {
@@ -22,6 +23,7 @@ export default function AlarmasPage() {
           Aquí aparecerán tus alarmas configuradas.
         </Typography>
       </Box>
+      <AlarmCard />
     </Container>
   );
 }
