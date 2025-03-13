@@ -1,6 +1,7 @@
 "use client";
 
 import { Box, Typography, Divider, Container } from "@mui/material";
+import AccountSettings from '../../components/AccountSettings';
 
 export default function AlarmasPage() {
   return (
@@ -18,6 +19,8 @@ export default function AlarmasPage() {
           Aquí esta la configuracion que necesitas realizar para tu cuenta.
         </Typography>
       </Box>
+
+      <AccountSettings />
     </Container>
   );
 }
