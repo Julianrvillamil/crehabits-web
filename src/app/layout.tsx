@@ -1,5 +1,4 @@
 "use client";
-import { metadata } from "./metadata";
 import ThemeRegistry from "@/components/ThemeRegistry";
 import { Geist, Geist_Mono } from "next/font/google";
 import Sidebar from "@/components/Sidebar"; 
