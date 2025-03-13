@@ -2,6 +2,8 @@
 
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import { CssBaseline, StyledEngineProvider } from "@mui/material";
+import { LocalizationProvider } from '@mui/x-date-pickers';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 
 const theme = createTheme({
   palette: {
@@ -62,10 +64,14 @@ const theme = createTheme({
 
 export default function ThemeRegistry({ children }: { children: React.ReactNode }) {
   return (
-    <StyledEngineProvider injectFirst> {/* Fixes style order */}
+    <StyledEngineProvider injectFirst>
+      {" "}
+      {/* Fixes style order */}
       <ThemeProvider theme={theme}>
-        <CssBaseline />
-        {children}
+        <LocalizationProvider dateAdapter={AdapterDayjs}>
+          <CssBaseline />
+          {children}
+        </LocalizationProvider>
       </ThemeProvider>
     </StyledEngineProvider>
   );
